@@ -13,6 +13,9 @@ Contact: **[chiefleo@mail.grokbot.com](mailto:chiefleo@mail.grokbot.com)**
 | `script.js` | Optional enhancements: scroll reveal, copy-email button, footer year |
 | `favicon.svg` | Favicon |
 | `og-image.svg` / `og-image.png` | Social share image (source + rendered PNG) |
+| `how-it-works.png` / `img/how-it-works.jpg` | "How it works" explainer (rendered from HTML, source kept outside the repo) |
+| `qr-request.png` / `img/qr-request.svg` | QR code: pre-filled website-request email (PNG is print/screen size) |
+| `img/work-*.jpg` | Compressed screenshots of live client sites |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |
 
 ## Run locally
@@ -36,6 +39,6 @@ Once the final URL is known, change the `og:image` meta tag in `index.html` to t
 - **Agency name:** "Leo-McG" appears in `index.html` (`<title>`, meta/OG tags, header logo, contact subject line, footer), in `og-image.svg`, and in this README. Search and replace `Leo-McG`; the logo letter is the `L` in `.logo-mark`.
 - **Email:** search and replace `chiefleo@mail.grokbot.com`.
 - **Colors and fonts:** edit the variables in `:root` at the top of `styles.css`.
-- **Work section:** the four "Project slot" cards are CSS placeholders. Replace each `.work-art` contents with an `<img>` (with `alt` text) when real projects are ready.
+- **Work section:** each project is an `<article class="work-feature">` in `index.html`; copy one to add a project.
 
 Motion is subtle and is disabled automatically for visitors who prefer reduced motion.

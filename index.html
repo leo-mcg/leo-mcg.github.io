@@ -3,25 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- AGENCY NAME: change "Leo-McG" here, in the header/footer below, and in README.md -->
-  <title>Leo-McG — Websites with a point of view</title>
-  <meta name="description" content="Leo-McG is an independent web design studio. We design, build, and care for fast, accessible websites and brands. Say hello: chiefleo@mail.grokbot.com">
+  <title>Leo-McG — AI-powered web design. Fresh sites in hours, not weeks.</title>
+  <meta name="description" content="Leo-McG rebuilds and refreshes websites for small businesses and nonprofits using Grok Bot AI agents. Send us your site, get a modern one back fast. chiefleo@mail.grokbot.com">
   <meta name="theme-color" content="#16130F">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Leo-McG — Websites with a point of view">
-  <meta property="og:description" content="An independent web design studio: design, development, branding, and ongoing care.">
+  <meta property="og:url" content="https://leo-mcg.github.io/">
+  <meta property="og:title" content="Leo-McG — Fresh websites in hours, not weeks">
+  <meta property="og:description" content="AI-assisted web design for small businesses and nonprofits, powered by Grok Bot agents.">
   <meta property="og:image" content="https://leo-mcg.github.io/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="script.js?v=2" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -34,10 +32,10 @@
       </a>
       <nav aria-label="Primary">
         <ul class="nav">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a class="nav-cta" href="#contact">Contact</a></li>
+          <li class="hide-sm"><a href="#work">Work</a></li>
+          <li class="hide-sm"><a href="#how">How it works</a></li>
+          <li class="hide-sm"><a href="#services">Services</a></li>
+          <li><a class="nav-cta" href="#request">Request a site</a></li>
         </ul>
       </nav>
     </div>
@@ -48,100 +46,37 @@
     <section class="hero" id="top">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Independent web studio<span class="eyebrow-extra"> · Booking new projects</span></p>
-          <h1>Websites with a <em>point&nbsp;of&nbsp;view.</em></h1>
-          <p class="lede">We design and build sharp, fast, accessible websites for people who care how their work shows up online. Small studio, direct line, no handoffs.</p>
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> AI-assisted web studio <span class="eyebrow-extra">· Powered by Grok Bot</span></p>
+          <h1>Your new website, <em>in hours&nbsp;not&nbsp;weeks.</em></h1>
+          <p class="lede">Leo-McG rebuilds tired websites into fast, modern, mobile-friendly ones. Send us your current site (or just an idea) and our Grok Bot agents research, design, build, and publish it, with a real human checking every step.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:chiefleo@mail.grokbot.com?subject=New%20project%20inquiry">
-              Start a project
+            <a class="btn btn-primary" href="mailto:chiefleo@mail.grokbot.com?subject=Website%20request&amp;body=Hi%20Leo-McG%2C%20I%27d%20like%20a%20website.%0A%0AName/organization%3A%0ACurrent%20site%20%28if%20any%29%3A%0AWhat%20I%20need%3A">
+              Request a site
               <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a class="hero-email" href="mailto:chiefleo@mail.grokbot.com">chiefleo@mail.grokbot.com</a>
+            <a class="btn btn-outline" href="#work">See tonight's work</a>
           </div>
+          <ul class="hero-stats">
+            <li><strong>Hours</strong><span>from email to live site</span></li>
+            <li><strong>24 pages</strong><span>rebuilt for one nonprofit tonight</span></li>
+            <li><strong>Mobile-first</strong><span>accessible, no trackers</span></li>
+          </ul>
         </div>
 
-        <div class="hero-art" aria-hidden="true">
-          <div class="sun"></div>
-          <div class="card card-a">
-            <div class="bar"></div>
-            <div class="lines"><i></i><i></i><i class="short"></i></div>
+        <div class="hero-qr" aria-labelledby="hero-qr-cap">
+          <div class="qr-card">
+            <img src="img/qr-request.svg" width="260" height="260" alt="QR code: scan to email Leo-McG a pre-filled website request">
+            <p id="hero-qr-cap" class="qr-cap"><strong>Scan to request a site</strong><span>Opens a pre-filled email to us</span></p>
           </div>
-          <div class="card card-b">
-            <svg viewBox="0 0 120 80"><path d="M0 70 C30 70 30 20 60 20 S90 60 120 10" fill="none" stroke="currentColor" stroke-width="3"/></svg>
-          </div>
-          <div class="chip">Aa</div>
+          <div class="hero-sticker" aria-hidden="true">✦ Live at Grok Bot demo night</div>
         </div>
       </div>
 
       <div class="marquee" aria-hidden="true">
         <div class="marquee-track">
-          <span>Web design</span><span>✦</span><span>Development</span><span>✦</span><span>Branding</span><span>✦</span><span>Ongoing care</span><span>✦</span>
-          <span>Web design</span><span>✦</span><span>Development</span><span>✦</span><span>Branding</span><span>✦</span><span>Ongoing care</span><span>✦</span>
+          <span>Small businesses</span><span>✦</span><span>Nonprofits</span><span>✦</span><span>Site refreshes</span><span>✦</span><span>Landing pages</span><span>✦</span><span>Built with Grok Bot</span><span>✦</span>
+          <span>Small businesses</span><span>✦</span><span>Nonprofits</span><span>✦</span><span>Site refreshes</span><span>✦</span><span>Landing pages</span><span>✦</span><span>Built with Grok Bot</span><span>✦</span>
         </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section" id="services" aria-labelledby="services-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="kicker">01 — Services</p>
-          <h2 id="services-title">Everything a site needs, <em>from first sketch to long after launch.</em></h2>
-        </div>
-        <ul class="services">
-          <li class="service reveal">
-            <span class="svc-num">01</span>
-            <h3>Web design</h3>
-            <p>Layouts, type, and interaction designed around your content and your audience, not a template.</p>
-            <ul class="tags"><li>UX &amp; structure</li><li>UI design</li><li>Prototypes</li></ul>
-          </li>
-          <li class="service reveal">
-            <span class="svc-num">02</span>
-            <h3>Development</h3>
-            <p>Hand-built, standards-based front ends that load fast, read well on any screen, and work for everyone.</p>
-            <ul class="tags"><li>Responsive</li><li>Accessible</li><li>Performance</li></ul>
-          </li>
-          <li class="service reveal">
-            <span class="svc-num">03</span>
-            <h3>Branding</h3>
-            <p>Logos, color, and typography systems that give you a recognizable voice across web and beyond.</p>
-            <ul class="tags"><li>Identity</li><li>Type systems</li><li>Guidelines</li></ul>
-          </li>
-          <li class="service reveal">
-            <span class="svc-num">04</span>
-            <h3>Ongoing care</h3>
-            <p>Updates, improvements, and a real person to email when something needs to change.</p>
-            <ul class="tags"><li>Maintenance</li><li>Content updates</li><li>Iteration</li></ul>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="section process-section" id="process" aria-labelledby="process-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="kicker">02 — Process</p>
-          <h2 id="process-title">How we work. <em>Clear steps, no mystery.</em></h2>
-        </div>
-        <ol class="process">
-          <li class="step reveal">
-            <h3><span>Listen</span></h3>
-            <p>We start with a conversation about your goals, audience, and what success looks like.</p>
-          </li>
-          <li class="step reveal">
-            <h3><span>Shape</span></h3>
-            <p>Structure, content, and visual direction come together in designs you can react to early.</p>
-          </li>
-          <li class="step reveal">
-            <h3><span>Build</span></h3>
-            <p>We develop the site carefully, test it on real devices, and refine it with you.</p>
-          </li>
-          <li class="step reveal">
-            <h3><span>Launch &amp; care</span></h3>
-            <p>We ship it, hand over the keys, and stay on hand to keep it improving.</p>
-          </li>
-        </ol>
       </div>
     </section>
 
@@ -150,53 +85,118 @@
       <div class="wrap">
         <div class="section-head split">
           <div>
-            <p class="kicker">03 — Work</p>
-            <h2 id="work-title">Selected work, <em>coming soon.</em></h2>
+            <p class="kicker">01 — Built tonight</p>
+            <h2 id="work-title">Real sites, <em>live right now.</em></h2>
           </div>
-          <p class="section-note">We're a new studio, so this space is reserved for the first projects we're proud to show. Yours could be one of them.</p>
+          <p class="section-note">Every project below was requested by email and built by Grok Bot agents tonight. Tap through, they're live on the web.</p>
         </div>
-        <div class="work-grid">
-          <figure class="work work-1 reveal">
-            <div class="work-art" aria-hidden="true">
-              <div class="w1-circle"></div><div class="w1-bars"><i></i><i></i><i></i></div>
+
+        <div class="work-list">
+          <article class="work-feature reveal">
+            <a class="work-shots" href="https://leo-mcg.github.io/themagicofchristmas/" target="_blank" rel="noopener">
+              <span class="browser">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>leo-mcg.github.io/themagicofchristmas</span></span>
+                <img src="img/work-mocs.jpg" width="1200" height="750" loading="lazy" alt="Home page of the refreshed Magic of Christmas website: 'Helping others believe again in the Magic of Christmas'">
+              </span>
+              <span class="phone"><img src="img/work-mocs-mobile.jpg" width="390" height="780" loading="lazy" alt="The Magic of Christmas site on a phone"></span>
+            </a>
+            <div class="work-info">
+              <p class="work-tag">Nonprofit · Full site refresh</p>
+              <h3>The Magic of Christmas</h3>
+              <p>A Calgary charity, 100% volunteer-run since 1983. Their WordPress site was rebuilt as a fast, modern static site with full page parity: donate, volunteer, events, sponsors, FAQ and more. 24 pages, mobile-first.</p>
+              <ul class="tags"><li>24 pages</li><li>Content preserved</li><li>Mobile-first</li><li>GitHub Pages</li></ul>
+              <a class="btn btn-primary btn-sm" href="https://leo-mcg.github.io/themagicofchristmas/" target="_blank" rel="noopener">View live site ↗</a>
             </div>
-            <figcaption><span>Project slot 01</span><span class="work-type">Website · Brand</span></figcaption>
-          </figure>
-          <figure class="work work-2 reveal">
-            <div class="work-art" aria-hidden="true">
-              <svg viewBox="0 0 200 140" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="100" cy="70" r="20"/><circle cx="100" cy="70" r="38"/><circle cx="100" cy="70" r="56"/><circle cx="100" cy="70" r="74"/></g></svg>
+          </article>
+<!--OCG-->
+          <article class="work-feature work-self reveal">
+            <a class="work-shots" href="https://leo-mcg.github.io/">
+              <span class="browser">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>leo-mcg.github.io</span></span>
+                <img src="img/work-self.jpg" width="1200" height="750" loading="lazy" alt="The Leo-McG agency website you're looking at">
+              </span>
+            </a>
+            <div class="work-info">
+              <p class="work-tag">Agency site · From scratch</p>
+              <h3>This website</h3>
+              <p>Yes, this one too. Copy, layout, the How-it-works diagram, the QR code, and publishing were all done by Grok Bot agents tonight.</p>
+              <ul class="tags"><li>One page</li><li>Illustrated explainer</li><li>QR request</li></ul>
             </div>
-            <figcaption><span>Project slot 02</span><span class="work-type">E‑commerce</span></figcaption>
-          </figure>
-          <figure class="work work-3 reveal">
-            <div class="work-art" aria-hidden="true">
-              <div class="w3-type">Aa</div>
-            </div>
-            <figcaption><span>Project slot 03</span><span class="work-type">Identity</span></figcaption>
-          </figure>
-          <figure class="work work-4 reveal">
-            <div class="work-art" aria-hidden="true">
-              <div class="w4-grid"><i></i><i></i><i></i><i></i><i></i></div>
-            </div>
-            <figcaption><span>Project slot 04</span><span class="work-type">Web app</span></figcaption>
-          </figure>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="contact" id="contact" aria-labelledby="contact-title">
+    <!-- HOW IT WORKS -->
+    <section class="section how-section" id="how" aria-labelledby="how-title">
       <div class="wrap">
-        <p class="kicker light">04 — Contact</p>
-        <h2 id="contact-title">Have a project in mind? <em>Let's talk.</em></h2>
-        <p class="contact-lede">Tell us a little about what you're building. Every email gets a reply from a real person.</p>
-        <a class="contact-email" href="mailto:chiefleo@mail.grokbot.com?subject=Hello%20Leo-McG">
-          <span class="ce-user">chiefleo</span><wbr><span class="ce-domain">@mail.grokbot.com</span>
-        </a>
-        <div class="contact-actions">
-          <a class="btn btn-light" href="mailto:chiefleo@mail.grokbot.com?subject=New%20project%20inquiry">Email us</a>
-          <button class="btn btn-ghost" type="button" data-copy="chiefleo@mail.grokbot.com">Copy address</button>
-          <span class="copy-status" role="status" aria-live="polite"></span>
+        <div class="section-head">
+          <p class="kicker">02 — How it works</p>
+          <h2 id="how-title">Four steps. <em>No mystery.</em></h2>
+        </div>
+        <figure class="explainer reveal">
+          <a href="how-it-works.png" target="_blank" rel="noopener"><img src="img/how-it-works.jpg" width="1600" height="900" loading="lazy" alt="How it works: 1) You email us your current site or idea. 2) Grok Bot agents research and pull in your content. 3) We design and build a fresh, modern site. 4) You review, and it goes live on the web. Minutes to hours, not weeks."></a>
+        </figure>
+        <ol class="steps-text">
+          <li><span>1</span><div><h3>You email us</h3><p>Your current site address or an idea. Scan the QR code and it's pre-filled.</p></div></li>
+          <li><span>2</span><div><h3>Agents research</h3><p>Grok Bot agents read your site and gather your text, photos, pages and brand.</p></div></li>
+          <li><span>3</span><div><h3>Design + build</h3><p>A fresh, modern, mobile-friendly site, keeping everything that matters.</p></div></li>
+          <li><span>4</span><div><h3>Review &amp; go live</h3><p>You review, we tweak, and it's published with a real link.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">03 — What we do</p>
+          <h2 id="services-title">Built for the people <em>who never have time for their website.</em></h2>
+        </div>
+        <ul class="services">
+          <li class="service reveal">
+            <span class="svc-num">01</span>
+            <h3>Site refresh</h3>
+            <p>Keep your content, lose the clutter. We rebuild your existing site so it's fast, clean, and easy to read on a phone.</p>
+          </li>
+          <li class="service reveal">
+            <span class="svc-num">02</span>
+            <h3>Landing pages</h3>
+            <p>A sharp one-page site for a product, app, event, or campaign, with a clear call to action.</p>
+          </li>
+          <li class="service reveal">
+            <span class="svc-num">03</span>
+            <h3>Nonprofits</h3>
+            <p>Donate, volunteer, and event pages that make it easy for supporters to say yes.</p>
+          </li>
+          <li class="service reveal">
+            <span class="svc-num">04</span>
+            <h3>Ongoing care</h3>
+            <p>Need a change? Email us. Updates go out quickly, and a real person reads every message.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- REQUEST -->
+    <section class="contact" id="request" aria-labelledby="request-title">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="kicker light">04 — Request a site</p>
+          <h2 id="request-title">Want one? <em>Just email us.</em></h2>
+          <p class="contact-lede">Tell us your name, your current website (if you have one), and what you need. We'll reply with next steps, usually the same day.</p>
+          <a class="contact-email" href="mailto:chiefleo@mail.grokbot.com?subject=Website%20request&amp;body=Hi%20Leo-McG%2C%20I%27d%20like%20a%20website.%0A%0AName/organization%3A%0ACurrent%20site%20%28if%20any%29%3A%0AWhat%20I%20need%3A">
+            <span class="ce-user">chiefleo</span><wbr><span class="ce-domain">@mail.grokbot.com</span>
+          </a>
+          <div class="contact-actions">
+            <a class="btn btn-light" href="mailto:chiefleo@mail.grokbot.com?subject=Website%20request&amp;body=Hi%20Leo-McG%2C%20I%27d%20like%20a%20website.%0A%0AName/organization%3A%0ACurrent%20site%20%28if%20any%29%3A%0AWhat%20I%20need%3A">Email a request</a>
+            <button class="btn btn-ghost" type="button" data-copy="chiefleo@mail.grokbot.com">Copy address</button>
+            <span class="copy-status" role="status" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="contact-qr">
+          <img src="img/qr-request.svg" width="300" height="300" alt="QR code: scan to email Leo-McG a pre-filled website request">
+          <p><strong>Scan to request a site</strong><br>Point your phone camera here</p>
         </div>
       </div>
     </section>
@@ -206,7 +206,7 @@
     <div class="wrap footer-inner">
       <p class="footer-brand">Leo-McG</p>
       <a class="footer-email" href="mailto:chiefleo@mail.grokbot.com">chiefleo@mail.grokbot.com</a>
-      <p class="footer-meta">© <span data-year>2026</span> Leo-McG Built by hand, no trackers.</p>
+      <p class="footer-meta">© <span data-year>2026</span> Leo-McG · Built with Grok Bot · No trackers.</p>
     </div>
   </footer>
 </body>
