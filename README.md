@@ -1,4 +1,4 @@
-# Chief Design Co. — landing page
+# Leo-McG — landing page
 
 Static landing page for an independent web design studio, built to be published with **GitHub Pages**. No build step, no dependencies, no trackers.
 
@@ -33,7 +33,7 @@ Once the final URL is known, change the `og:image` meta tag in `index.html` to t
 
 ## Customising
 
-- **Agency name:** "Chief Design Co." appears in `index.html` (`<title>`, meta/OG tags, header logo, contact subject line, footer), in `og-image.svg`, and in this README. Search and replace `Chief Design Co.`; the logo letter is the `C` in `.logo-mark`.
+- **Agency name:** "Leo-McG" appears in `index.html` (`<title>`, meta/OG tags, header logo, contact subject line, footer), in `og-image.svg`, and in this README. Search and replace `Leo-McG`; the logo letter is the `L` in `.logo-mark`.
 - **Email:** search and replace `chiefleo@mail.grokbot.com`.
 - **Colors and fonts:** edit the variables in `:root` at the top of `styles.css`.
 - **Work section:** the four "Project slot" cards are CSS placeholders. Replace each `.work-art` contents with an `<img>` (with `alt` text) when real projects are ready.
