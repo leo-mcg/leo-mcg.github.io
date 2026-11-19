@@ -1,30 +1,7 @@
-# Good Pages Studio
+# leo-mcg.github.io
 
-Free, simple, open-source websites for charities and nonprofits, hosted on GitHub Pages.
+The Good Pages Studio landing page has moved to **https://goodpagesstudio.github.io/** (repo: [goodpagesstudio/goodpagesstudio.github.io](https://github.com/goodpagesstudio/goodpagesstudio.github.io)).
 
-This repository is the studio's landing page: a single static page with no build step and no trackers.
+`index.html` here is a small redirect to the new address. Client sites such as https://leo-mcg.github.io/themagicofchristmas/ live in their own repos under this account and are not affected.
 
-- **Request a free website:** [chiefleo@mail.grokbot.com](mailto:chiefleo@mail.grokbot.com)
-- **Live site:** https://leo-mcg.github.io/
-
-## Files
-
-| File | Purpose |
-| --- | --- |
-| `index.html` | The page: hero, how it works, what you get, our work, who qualifies, request, footer |
-| `styles.css` | All styles (colors and fonts are CSS variables at the top) |
-| `script.js` | Small enhancements: scroll reveal, copy-email button, footer year |
-| `favicon.svg` | Favicon |
-| `og-image.png` | Social share image |
-| `img/qr-request.svg` / `qr-request.png` | QR code that opens a pre-filled request email |
-| `img/work-*.jpg` | Screenshots of live sites |
-
-## Run locally
-
-```sh
-python3 -m http.server 8000
-```
-
-## Adding a project
-
-Each project in "Our work" is an `<article class="work-card">` in `index.html`. Copy one, add a screenshot to `img/`, and update the link and copy.
+The other files are the old landing page's assets, kept so existing links to them keep working.
